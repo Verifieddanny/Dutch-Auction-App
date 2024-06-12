@@ -118,7 +118,7 @@ function Auction() {
   const [amount, setAmount] = useState(0);
 
   const onPurchaseError = (err: any) => {
-    toast(`Transaction Issue! ${err} 📛`, {
+    toast(`Insufficient Amount!  📛`, {
       position: "top-center",
       autoClose: 500,
       hideProgressBar: false,
