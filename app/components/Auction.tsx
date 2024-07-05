@@ -19,7 +19,8 @@ const calculateTimeLeft = (timePassed: any) => {
     0
   );
 
-  const targetTime = new Date(twoFiftyPM.getTime() + 24 * 60 * 60 * 1000);
+  // const targetTime = new Date(twoFiftyPM.getTime() + 24 * 60 * 60 * 1000);
+  const targetTime = new Date(now.getFullYear(), 6, 12, 22, 50, 0, 0); 
   const difference = +targetTime - (+now + Number(timePassed));
 
   let timeLeft = {};
